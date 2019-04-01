@@ -25,6 +25,7 @@
 		B1FA8B7922520D66005CF5EC /* icon-location-white.png in Resources */ = {isa = PBXBuildFile; fileRef = B1FA8B7322520D66005CF5EC /* icon-location-white.png */; };
 		B1FA8B7A22520D66005CF5EC /* arrow-drop-down-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B1FA8B7422520D66005CF5EC /* arrow-drop-down-512.png */; };
 		B1FA8B7B22520D66005CF5EC /* CMovieDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8B7522520D66005CF5EC /* CMovieDetailController.swift */; };
+		B1FA8B7D2252224F005CF5EC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8B7C2252224F005CF5EC /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		B1FA8B7322520D66005CF5EC /* icon-location-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-location-white.png"; path = "../../cinemaCRWN20190301/CinemaFix/icon-location-white.png"; sourceTree = "<group>"; };
 		B1FA8B7422520D66005CF5EC /* arrow-drop-down-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-drop-down-512.png"; path = "../../cinemaCRWN20190301/CinemaFix/arrow-drop-down-512.png"; sourceTree = "<group>"; };
 		B1FA8B7522520D66005CF5EC /* CMovieDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CMovieDetailController.swift; path = ../../cinemaCRWN20190301/CinemaFix/CMovieDetailController.swift; sourceTree = "<group>"; };
+		B1FA8B7C2252224F005CF5EC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				B16077C0224C930000210DFC /* MovieDetailViewController.swift */,
 				B16077BA224BFCAF00210DFC /* homeListSreenViewController.swift */,
 				B16077C8224DE60000210DFC /* votedListScreenViewController.swift */,
+				B1FA8B7C2252224F005CF5EC /* ProfileViewController.swift */,
 				55DE2B412248D73800E30195 /* Main.storyboard */,
 				55DE2B442248D73900E30195 /* Assets.xcassets */,
 				55DE2B492248D73900E30195 /* Info.plist */,
@@ -297,6 +300,7 @@
 				B16077BB224BFCAF00210DFC /* homeListSreenViewController.swift in Sources */,
 				55DE2B3E2248D73800E30195 /* AppDelegate.swift in Sources */,
 				B16077C1224C930000210DFC /* MovieDetailViewController.swift in Sources */,
+				B1FA8B7D2252224F005CF5EC /* ProfileViewController.swift in Sources */,
 				B1FA8B7722520D66005CF5EC /* SearchCityController.swift in Sources */,
 				B1FA8B7B22520D66005CF5EC /* CMovieDetailController.swift in Sources */,
 				B16077BF224C06EC00210DFC /* Video.swift in Sources */,
