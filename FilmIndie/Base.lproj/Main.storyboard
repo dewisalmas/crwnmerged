@@ -33,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-864" y="-815"/>
+            <point key="canvasLocation" x="-78" y="-817"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1k2-e0-qT4">
@@ -92,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjb-DF-iyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="-816"/>
+            <point key="canvasLocation" x="912" y="-818"/>
         </scene>
         <!--profile-->
         <scene sceneID="5lG-uM-dB9">
@@ -763,13 +763,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdM-la-FYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1103" y="-816"/>
+            <point key="canvasLocation" x="1890" y="-818"/>
         </scene>
         <!--Explore-->
         <scene sceneID="Lbk-c2-alX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OIl-AT-GA1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" id="jq7-Qi-Lkg"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="explore_bit" selectedImage="explore_bit" id="jq7-Qi-Lkg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9M5-6H-gfK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -788,7 +788,7 @@
         <scene sceneID="qlJ-Lr-0Vr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fb0-OQ-98P" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Voted" id="MxZ-M6-BbR"/>
+                    <tabBarItem key="tabBarItem" title="Voted" image="voted_bit" selectedImage="voted_bit" id="MxZ-M6-BbR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zpQ-0e-3j9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1261,7 +1261,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zvj-w4-e3Y">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zvj-w4-e3Y" secondAttribute="height" multiplier="207:22" id="wos-L8-cjh"/>
                                 </constraints>
@@ -1312,7 +1312,7 @@
         <scene sceneID="cqy-iB-UpZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aNZ-jU-F0d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cinema" id="diO-mM-YlO"/>
+                    <tabBarItem key="tabBarItem" title="Cinema" image="cinema_bit" selectedImage="cinema_bit" id="diO-mM-YlO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gwi-sC-hfD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1331,7 +1331,7 @@
         <scene sceneID="7Jw-Sb-urW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qfP-jq-yob" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="spf-0t-x8r"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profil_bit" selectedImage="profil_bit" id="spf-0t-x8r"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="faN-8n-JjO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1612,13 +1612,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpd-wA-qwi">
-                                <rect key="frame" x="29" y="600" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="78m-bC-F5v"/>
@@ -1643,7 +1636,7 @@
         <scene sceneID="IGQ-rZ-uVQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AYO-Tl-InV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Library" id="jBL-PH-QKz"/>
+                    <tabBarItem key="tabBarItem" title="My Library" image="lib_bit" selectedImage="lib_bit" id="jBL-PH-QKz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tFw-7j-2Ap">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1662,7 +1655,7 @@
         <scene sceneID="gaO-zc-ncl">
             <objects>
                 <viewController id="ZgK-fG-DBT" customClass="myMovieDetailViewController" customModule="FilmIndie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="VgE-0R-2yJ">
+                    <view key="view" contentMode="scaleToFill" id="VgE-0R-2yJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1986,11 +1979,11 @@
                                 </prototypes>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="ESe-B3-PHw">
-                                <rect key="frame" x="349" y="747" width="54" height="56"/>
+                                <rect key="frame" x="330" y="728" width="73" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdD-7d-hy8">
-                                <rect key="frame" x="349" y="747" width="54" height="56"/>
+                                <rect key="frame" x="329" y="726" width="74" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="dkw-Nk-Spa" kind="show" id="kpo-Ov-md3"/>
@@ -2014,7 +2007,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQW-PD-32d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4748" y="-3301"/>
+            <point key="canvasLocation" x="4747.826086956522" y="-3301.3392857142858"/>
         </scene>
         <!--Edit Movie-->
         <scene sceneID="xdd-V9-yb1">
@@ -2373,13 +2366,18 @@
     <resources>
         <image name="Untitled" width="153" height="182"/>
         <image name="arrow-drop-down-512.png" width="512" height="358"/>
+        <image name="cinema_bit" width="31" height="23"/>
+        <image name="explore_bit" width="33" height="32"/>
         <image name="icon-location-white.png" width="400" height="505"/>
+        <image name="lib_bit" width="42" height="28"/>
         <image name="plus" width="78" height="78"/>
+        <image name="profil_bit" width="30" height="32"/>
+        <image name="voted_bit" width="36" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Xn7-ra-mYZ"/>
         <segue reference="Eph-Bj-Zio"/>
-        <segue reference="TKz-0V-r0k"/>
+        <segue reference="AS6-t0-s4V"/>
         <segue reference="E5A-2a-RSO"/>
     </inferredMetricsTieBreakers>
 </document>

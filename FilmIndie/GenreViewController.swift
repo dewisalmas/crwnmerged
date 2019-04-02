@@ -15,7 +15,7 @@ class GenreViewController: UIViewController {
     
     @IBOutlet weak var editLabel: UILabel!
     
-    private let dataSource = ["Drama","Comedy","Thriller","Horror","Romance","Slice of Life","Dramasci-Fi","Action","Historical","Adventure"]
+    private let dataSource = ["Pick Genre","Drama","Comedy","Thriller","Horror","Romance","Slice of Life","Dramasci-Fi","Action","Historical","Adventure"]
 
     
     @IBAction func editButtonPress(_ sender: Any) {

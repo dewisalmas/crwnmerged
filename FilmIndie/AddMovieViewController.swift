@@ -34,7 +34,9 @@ class AddMovieViewController: UIViewController,UIPickerViewDelegate,UIPickerView
         
         genreLabel.text = UserDefaults.standard.string(forKey: "genre")
         
-        for i in (1900...2019){
+        let year = Calendar.current.component(.year, from: Date())
+        
+        for i in (2000...year){
             data.append(String(i))
         }
         data2 = ["AMBON", "BALIKPAPAN", "BANDUNG", "BANJARMASIN", "BATAM", "BEKASI", "BENGKULU", "BOGOR", "CILEGON", "CIREBON", "DENPASAR", "GARUT", "GRESIK", "JAKARTA", "KARAWANG", "SURABAYA", "PALEMBANG"]
@@ -92,7 +94,7 @@ class AddMovieViewController: UIViewController,UIPickerViewDelegate,UIPickerView
         var genreText:String! = genreLabel.text
         
         
-        var tempVideos = UserDefaults.standard.array(forKey: "tempVideos")
+        //var tempVideos = UserDefaults.standard.array(forKey: "tempVideos")
         
         
         
@@ -101,12 +103,12 @@ class AddMovieViewController: UIViewController,UIPickerViewDelegate,UIPickerView
         print(producerText)
         
         
-        var video0 = Video(image: #imageLiteral(resourceName: "sample6"), title: titleText, director: producerText, genre: genreText, synopsis: synopsisText, duration: "Movie Duration", year: "2019", location: "Surabaya", poster:#imageLiteral(resourceName: "Untitled"), totvote: 12, publisher: "user001", publishedDate: "12-01-2019", screeningDate: "", vote:false, cs: false, startAt:"", minute:"", theater:"")
+        var videoAdd = Video(image: #imageLiteral(resourceName: "pshoplifters"), title: titleText, director: producerText, genre: genreText, synopsis: synopsisText, duration: "Movie Duration", year: "2019", location: "Surabaya", poster:#imageLiteral(resourceName: "pshoplifters"), totvote: 12, publisher: "user001", publishedDate: "12-01-2019", screeningDate: "", vote:false, cs: false, startAt:"", minute:"", theater:"")
         
+        homeListSreenViewController.GlobalVariable.videos.append(videoAdd)
         
-        
-        tempVideos?.append(video0)
-        print(tempVideos)
+        //tempVideos?.append(video0)
+        //print(tempVideos)
         
     }
     
