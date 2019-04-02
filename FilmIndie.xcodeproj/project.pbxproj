@@ -35,6 +35,8 @@
 		B1FA8B9D225365F4005CF5EC /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8B95225365F4005CF5EC /* AddMovieViewController.swift */; };
 		B1FA8B9E225365F4005CF5EC /* GenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8B96225365F4005CF5EC /* GenreViewController.swift */; };
 		B1FA8B9F225365F4005CF5EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1FA8B97225365F4005CF5EC /* LaunchScreen.storyboard */; };
+		B1FA8BA122536F3A005CF5EC /* myLibraryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8BA022536F3A005CF5EC /* myLibraryListViewController.swift */; };
+		B1FA8BA322539368005CF5EC /* myMovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8BA222539368005CF5EC /* myMovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		B1FA8B95225365F4005CF5EC /* AddMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
 		B1FA8B96225365F4005CF5EC /* GenreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreViewController.swift; sourceTree = "<group>"; };
 		B1FA8B97225365F4005CF5EC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1FA8BA022536F3A005CF5EC /* myLibraryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myLibraryListViewController.swift; sourceTree = "<group>"; };
+		B1FA8BA222539368005CF5EC /* myMovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myMovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,33 +143,35 @@
 		55DE2B3C2248D73800E30195 /* FilmIndie */ = {
 			isa = PBXGroup;
 			children = (
-				B1FA8B95225365F4005CF5EC /* AddMovieViewController.swift */,
-				B1FA8B92225365F3005CF5EC /* EditMovieViewController.swift */,
-				B1FA8B96225365F4005CF5EC /* GenreViewController.swift */,
-				B1FA8B97225365F4005CF5EC /* LaunchScreen.storyboard */,
-				B1FA8B90225365F3005CF5EC /* Library.swift */,
-				B1FA8B93225365F3005CF5EC /* LibraryTableViewCell.swift */,
-				B1FA8B91225365F3005CF5EC /* LibraryViewController.swift */,
-				B1FA8B94225365F3005CF5EC /* ScheduleViewController.swift */,
-				B1FA8B7E22534E7B005CF5EC /* arrow-drop-down-512.png */,
+				55DE2B3D2248D73800E30195 /* AppDelegate.swift */,
+				B16077BE224C06EC00210DFC /* Video.swift */,
 				B1FA8B8022534E7C005CF5EC /* CinemaController.swift */,
 				B1FA8B8322534E7C005CF5EC /* CMovieDetailController.swift */,
-				B1FA8B8522534E7C005CF5EC /* icon-location-white.png */,
+				B1FA8B94225365F3005CF5EC /* ScheduleViewController.swift */,
 				B1FA8B8122534E7C005CF5EC /* MovieCell.swift */,
 				B1FA8B8222534E7C005CF5EC /* SearchCityController.swift */,
-				B1FA8B7F22534E7B005CF5EC /* VotedTableViewController.swift */,
-				55DE2B3D2248D73800E30195 /* AppDelegate.swift */,
-				55DE2B3F2248D73800E30195 /* ViewController.swift */,
-				B16077BE224C06EC00210DFC /* Video.swift */,
+				B16077C8224DE60000210DFC /* votedListScreenViewController.swift */,
 				B16077BC224C04E400210DFC /* videoCellTableViewCell.swift */,
 				B16077C0224C930000210DFC /* MovieDetailViewController.swift */,
 				B16077BA224BFCAF00210DFC /* homeListSreenViewController.swift */,
-				B16077C8224DE60000210DFC /* votedListScreenViewController.swift */,
+				B1FA8BA022536F3A005CF5EC /* myLibraryListViewController.swift */,
+				B1FA8B92225365F3005CF5EC /* EditMovieViewController.swift */,
+				B1FA8B95225365F4005CF5EC /* AddMovieViewController.swift */,
+				B1FA8B96225365F4005CF5EC /* GenreViewController.swift */,
+				B1FA8B90225365F3005CF5EC /* Library.swift */,
+				B1FA8B93225365F3005CF5EC /* LibraryTableViewCell.swift */,
+				B1FA8B91225365F3005CF5EC /* LibraryViewController.swift */,
+				B1FA8BA222539368005CF5EC /* myMovieDetailViewController.swift */,
 				B1FA8B7C2252224F005CF5EC /* ProfileViewController.swift */,
 				55DE2B412248D73800E30195 /* Main.storyboard */,
+				B1FA8B97225365F4005CF5EC /* LaunchScreen.storyboard */,
+				55DE2B3F2248D73800E30195 /* ViewController.swift */,
+				B1FA8B7E22534E7B005CF5EC /* arrow-drop-down-512.png */,
+				B1FA8B8522534E7C005CF5EC /* icon-location-white.png */,
 				55DE2B442248D73900E30195 /* Assets.xcassets */,
 				55DE2B492248D73900E30195 /* Info.plist */,
 				55082868224A18D70022CF1E /* Launch Screen.storyboard */,
+				B1FA8B7F22534E7B005CF5EC /* VotedTableViewController.swift */,
 			);
 			path = FilmIndie;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 				B1FA8B9B225365F4005CF5EC /* LibraryTableViewCell.swift in Sources */,
 				B1FA8B8822534E7C005CF5EC /* CinemaController.swift in Sources */,
 				55DE2B402248D73800E30195 /* ViewController.swift in Sources */,
+				B1FA8BA322539368005CF5EC /* myMovieDetailViewController.swift in Sources */,
 				B16077BD224C04E400210DFC /* videoCellTableViewCell.swift in Sources */,
 				B1FA8B8922534E7C005CF5EC /* MovieCell.swift in Sources */,
 				B16077BB224BFCAF00210DFC /* homeListSreenViewController.swift in Sources */,
@@ -338,6 +345,7 @@
 				B16077C1224C930000210DFC /* MovieDetailViewController.swift in Sources */,
 				B1FA8B7D2252224F005CF5EC /* ProfileViewController.swift in Sources */,
 				B16077BF224C06EC00210DFC /* Video.swift in Sources */,
+				B1FA8BA122536F3A005CF5EC /* myLibraryListViewController.swift in Sources */,
 				B1FA8B9E225365F4005CF5EC /* GenreViewController.swift in Sources */,
 				B1FA8B9A225365F4005CF5EC /* EditMovieViewController.swift in Sources */,
 				B1FA8B8722534E7C005CF5EC /* VotedTableViewController.swift in Sources */,

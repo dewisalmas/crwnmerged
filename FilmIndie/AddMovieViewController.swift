@@ -85,7 +85,6 @@ class AddMovieViewController: UIViewController,UIPickerViewDelegate,UIPickerView
     
     
     
-    
     @IBAction func nextAddButton(_ sender: Any) {
         var titleText:String! = titleField.text
         var synopsisText:String! = synopsisField.text
