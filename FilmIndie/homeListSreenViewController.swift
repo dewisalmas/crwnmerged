@@ -13,6 +13,7 @@ class homeListSreenViewController: UIViewController, UISearchBarDelegate, UITabl
     struct GlobalVariable{
         static var videos: [Video] = []
         static var myIndex=0
+        static var sVid: [Video] = []
     }
     
     @IBOutlet weak var tableView: UITableView!
@@ -34,10 +35,10 @@ class homeListSreenViewController: UIViewController, UISearchBarDelegate, UITabl
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         tableView.delegate=self
         tableView.dataSource=self
         
+//        GlobalVariable.videos=searchVid()
         tableView.reloadData()
     }
     
@@ -65,6 +66,20 @@ class homeListSreenViewController: UIViewController, UISearchBarDelegate, UITabl
     
 //CODING ACTION APA AJA DI PAGE INI
     
+    func searchVid() -> [Video]{
+//        if GlobalVariable.sVid.count > 6{
+//            GlobalVariable.sVid.removeSubrange(6..<GlobalVariable.sVid.count)
+//        }
+        GlobalVariable.sVid.removeAll()
+
+        for i in 0..<GlobalVariable.videos.count{
+            if filteredData.contains(GlobalVariable.videos[i].title){
+                GlobalVariable.sVid.append(GlobalVariable.videos[i])
+            }
+        }
+        return GlobalVariable.sVid
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredData = searchText.isEmpty ? vidTitles: vidTitles.filter{ (item: String) -> Bool in
             return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
@@ -73,6 +88,13 @@ class homeListSreenViewController: UIViewController, UISearchBarDelegate, UITabl
         tableView.reloadData()
     }
 
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        GlobalVariable.videos.removeAll()
+        GlobalVariable.videos = createArray()
+        tableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         GlobalVariable.myIndex=indexPath.row
         MovieDetailViewController.GlobalVariable.globalIndex=GlobalVariable.myIndex
@@ -84,6 +106,14 @@ class homeListSreenViewController: UIViewController, UISearchBarDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        if GlobalVariable.sVid.count <= 6{
+//            GlobalVariable.videos=searchVid()
+//        }else{
+//            GlobalVariable.sVid.removeSubrange(1..<4)
+//            GlobalVariable.videos=searchVid()
+//        }
+        GlobalVariable.videos=searchVid()
+        print(GlobalVariable.videos.count)
         let cell = tableView.dequeueReusableCell(withIdentifier:"VideoCell") as! videoCellTableViewCell
         if filteredData.count == 6{
             cell.setVideo(video: GlobalVariable.videos[indexPath.row])
